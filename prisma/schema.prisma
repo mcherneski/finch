@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider  = "postgresql"
-  url  	    = env("DATABASE_URL")
+  url  	    = "postgresql://finch_owner:0ScBoTiGFM2b@ep-winter-heart-a6dl7mvo-pooler.us-west-2.aws.neon.tech/finch?sslmode=require"
 }
 
 model Subscriber {
