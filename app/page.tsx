@@ -48,7 +48,7 @@ export default function Home() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault()
 
     const res = await fetch('/api/subscribe', {

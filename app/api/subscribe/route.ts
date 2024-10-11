@@ -2,6 +2,8 @@
 
 import { NextResponse } from 'next/server'
 import { PrismaClient } from '@prisma/client'
+// import { Prisma } from '@prisma/client';
+// import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
 
 const prisma = new PrismaClient();
 
@@ -22,8 +24,12 @@ export async function POST(request: Request) {
       { message: 'Subscription successful', data: subscriber },
       { status: 200 }
     );
-  } catch (error: any) {
-    if (error.code === 'P2002') {
+  } catch (error) {
+    if (
+      error instanceof Error &&
+      'code' in error &&
+      error.code === 'P2002'
+    ) {
       // Unique constraint failed
       return NextResponse.json({ error: 'Email already subscribed' }, { status: 409 });
     } else {
