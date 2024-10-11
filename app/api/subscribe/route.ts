@@ -1,9 +1,7 @@
 // app/api/subscribe/route.ts
-
+'use server'
 import { NextResponse } from 'next/server'
 import { PrismaClient } from '@prisma/client'
-// import { Prisma } from '@prisma/client';
-// import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
 
 const prisma = new PrismaClient();
 
