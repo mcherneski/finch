@@ -7,20 +7,11 @@ import Image from 'next/image'
 const features = [
   {
     Icon: FileTextIcon,
-    name: "Smart Money",
+    name: "Finance, Simplified",
     description: "Manage all your financial assets in one place. Fiat, Crypto and investments.",
     href: "/",
     cta: "",
     className: "col-span-3 lg:col-span-1",
-    background: (<img className="absolute -right-20 -top-20 opacity-60" />),
-  },
-  {
-    Icon: HeartFilledIcon,
-    name: "Community Driven",
-    description: "Execute on the latest alpha, share with friends, and earn with the best.",
-    href: "/",
-    cta: "",
-    className: "col-span-3 lg:col-span-2",
     background: (<img className="absolute -right-20 -top-20 opacity-60" />),
   },
   {
@@ -33,9 +24,18 @@ const features = [
     background: (<img className="absolute -right-20 -top-20 opacity-60" />),
   },
   {
+    Icon: HeartFilledIcon,
+    name: "Socially Driven",
+    description: "Execute on the latest alpha, share with friends, and earn with the best.",
+    href: "/",
+    cta: "",
+    className: "col-span-3 lg:col-span-2",
+    background: (<img className="absolute -right-20 -top-20 opacity-60" />),
+  },
+  {
     Icon: BackpackIcon,
-    name: "Bring Your Peoples",
-    description: "Share access with those you trust. Your data, your choice.",
+    name: "Manage Together",
+    description: "Invite your partner, family and financial advisor.",
     href: "/",
     cta: "",
     className: "col-span-3 lg:col-span-1",
@@ -85,7 +85,7 @@ export default function Home() {
       </BentoGrid>
       <div className='w-3/4 mx-auto'>
         <div className="mt-12 mb-20">
-          <h2 className="text-2xl text-center font-semibold mb-4">Join the Birdhouse!</h2>
+          <h2 className="text-2xl text-center font-semibold mb-4">Join the Birdhouse</h2>
           <form onSubmit={handleSubmit} className="flex flex-col items-center">
             <input
               type="email"
