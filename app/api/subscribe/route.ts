@@ -1,5 +1,3 @@
-// app/api/subscribe/route.ts
-'use server'
 import { NextResponse } from 'next/server'
 import { PrismaClient } from '@prisma/client'
 
