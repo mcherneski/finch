@@ -90,7 +90,7 @@ export default function Home() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="lg:w-1/3 w-3/4 px-4 py-2 mb-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+              className="lg:w-1/3 w-3/4 px-4 text-black py-2 mb-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -99,9 +99,7 @@ export default function Home() {
             <button
               type="submit"
               className="w-1/4 px-6 py-2 bg-finchYellow text-black rounded-md hover:bg-finchYellow/95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-finchYellow dark:hover:finchYellow/50S"
-            >
-              Submit
-            </button>
+            >Submit</button>
           </form>
         </div>
       </div>
